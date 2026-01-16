@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 15px;
+  background:#FEFEFE;
+  /* color: rgb(244, 239, 239); */
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main_menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_menu .logo{
+
+}
+.main_menu .menu{
+  display: flex;
+  align-items: center;
+}
+.main_menu .menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+.main_menu .menu ul li {
+  list-style: none;
+
+}
+.main_menu .menu ul li a{
+  
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.btn button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+}
+.btn button span{
+  /* background: transparent;
+  border: none; */
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background: #fff;
+  padding: 12px 20px;
+  border: 1px solid #eee;
+}
+
+.departments {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input input {
+  width: 350px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-action select {
+  border: none;
+  outline: none;
+}
+
+.search-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+#banner-1{
+
+  /* margin: 80px; */
+  /* display: flex; */
+ 
+}
+.overlay{
+  background: url("./assets/banner-1.png")no-repeat center/cover;
+  height: 720px;
+  display: flex; 
+  align-items: center; 
+}
+.banner{
+  max-width: 624px;
+  display: flex; 
+  flex-direction: column;
+  padding-left:110px;
+}
+.banner h1{
+  color: #222222;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+.banner p{
+  color: #222222;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  padding-bottom: 40px;
+}
+.banner .hero_btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  
+}
+.banner .hero_btn button{
+  background: black;
+  padding:15px 35px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card .card_image{
+
+}
+.card .card_image img{
+
+}
+.card h5{
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: auto;
+}
+.card p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.course{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  align-items: center;
+}
