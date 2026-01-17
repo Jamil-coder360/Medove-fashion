@@ -1,9 +1,11 @@
-import React from 'react'
+import "./Button.css";
 
-const Button = () => {
+const Button = ({ text, type = "dark" }) => {
   return (
-    <div>Button</div>
-  )
-}
+    <button className={`btn ${type}`}>
+      {text}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

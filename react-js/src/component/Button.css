@@ -1,0 +1,16 @@
+.btn {
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.dark {
+  background: black;
+  color: white;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid black;
+}

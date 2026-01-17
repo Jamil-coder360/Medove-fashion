@@ -182,7 +182,6 @@ nav {
     grid-template-columns: repeat(4,1fr);
 }
 .offer{
-  background-color: #e76767 !;
   background: url(./assets/offer_gp.jpg) no-repeat center/cover;
   display: flex;
   align-items: start;
@@ -199,3 +198,12 @@ nav {
    gap: 32px;
    height: 320px;
 }
+/* .special-btn button{
+  background: black;
+  padding:15px 35px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+} */
