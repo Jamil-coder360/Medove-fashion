@@ -181,3 +181,21 @@ nav {
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
+.offer{
+  background-color: #e76767 !;
+  background: url(./assets/offer_gp.jpg) no-repeat center/cover;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.special_offer{
+  margin: 100px 0;
+}
+.special{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 32px;
+   height: 320px;
+}
