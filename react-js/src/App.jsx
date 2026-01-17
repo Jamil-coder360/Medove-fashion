@@ -12,7 +12,7 @@ const App = () => {
       <Header />
       <Search />
       <Banner />
-      <section>
+      <section className="card_box">
         <div className="container">
           <div className="course">
 
