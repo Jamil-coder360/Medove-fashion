@@ -1,6 +1,8 @@
 import React from "react";
+// import components
 import Button from "./Button";
 
+// const DiscountCard props: discount, title, img 
 const DiscountCard = ({ discount, title, img }) => {
 	const bgImage = {
 		background: `url(${img})`,
@@ -8,6 +10,8 @@ const DiscountCard = ({ discount, title, img }) => {
 		backgroundRepeat: "no-repeat",
 		backgroundSize: "cover",
 	};
+
+	// return discount card design
 	return (
 		<div style={bgImage}>
 			<div className="bg-white/70 px-[38px] py-[38px]">
