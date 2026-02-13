@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+/* container */
+@utility container {
+	margin-inline: auto;
+	padding-inline: 1rem;
+}
+/* custom-thing */
+@theme {
+	/* Colors */
+	--color-black-222: #222222;
+	--color-black-063: #121063;
+	--color-black-d0a: #110d0a;
+	--color-gray-75: #757575;
+	--color-red-45: #ff4545;
+
+	/* Font Family */
+	--font-jost: "Jost", sans-serif;
+
+	/* Breakpoint */
+	--breakpoint-*: initial;
+	--breakpoint-xs: 30rem;
+	--breakpoint-sm: 40rem;
+	--breakpoint-md: 48rem;
+	--breakpoint-lg: 64rem;
+	--breakpoint-xl: 82rem;
+
+
+}
+
+@layer components {
+  .dot {
+	margin-top:65px;
+    width: 20px;
+    height: 20px;
+    background: #d9d9d9;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .slick-dots li.slick-active .dot {
+    /* width: 30px; */
+    background: black;
+  }
+
+  /* .slick-dots li {
+    margin: 0 4px;
+  } */
+    .slick-dots li:nth-child(n + 4) {
+    display: none !important;
+  }
+}
+
+@layer base {
+	body {
+		@apply font-jost;
+	}
+}
