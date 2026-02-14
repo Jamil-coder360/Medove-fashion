@@ -40,6 +40,7 @@ const Featured = () => {
                Image={Image_1}
               title="Relaxed Stitch Shirt"
               price="ADD TO CART"
+              showUnderline={true}
               colors={["#55483B", "#403D72", "#E5C2C3", "#E6DDD6"]}
               />
             </div>

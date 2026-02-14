@@ -1,6 +1,6 @@
 import React from "react";
 
-const FeaturedCard = ({ Image,title, price, colors }) => {
+const FeaturedCard = ({ Image,title, price, colors,showUnderline }) => {
   return (
     <div className=" flex flex-col items-center">
       <div className="w-[296px] h-[419px] relative group">
@@ -23,7 +23,9 @@ const FeaturedCard = ({ Image,title, price, colors }) => {
           );
         })}
       </div>
-      <p>{price}</p>
+      <p className={`pt-4 font-semibold text-[14px] ${
+						showUnderline ? "underline underline-offset-4" : ""
+					}`}>{price}</p>
     </div>
   );
 };

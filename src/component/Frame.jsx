@@ -28,12 +28,18 @@ const Frame = () => {
           </div>
           <div className="grid grid-cols-2 gap-9">
             <div style={Images()}>
-              {/* <SpecialOfferCard 
-                 img={ Images}
-                 text={"$179.000"}
-                 button={"Shop now"}
-                 /> */}
-              <Button variant="white">shop now</Button>
+              <div className="mt-12.5 ml-12.5">
+                <p className="text-[18px] text-black-222 font-medium leading-[1.5] font-jost mb-1.25">
+                  Flat 20% Discount
+                </p>
+                <h3 className=" text-[28px] font-medium leading-[1.5] text-black-222 mb-4  max-w-[320px]">
+                  Don’t Miss Today’s Exclusive Picks
+                </h3>
+                <p className=" text-[18px] font-normal leading-[1.5] text-black-222 mb-7.5 ">
+                  Casual, cool, and always in style.
+                </p>
+                <Button variant="white">SHOP NOW</Button>
+              </div>
             </div>
             <div className="grid grid-cols-1 gap-10">
               <SpecialOfferCard
