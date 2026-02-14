@@ -2,6 +2,7 @@ import AboutUs from '../component/AboutUs';
 import Banner from '../component/Banner';	
 import Brand from '../component/Brand';
 import Featured from '../component/Featured';
+import Frame from '../component/Frame';
 import Newarrival from '../component/Newarrival';
 import SpecialOffer from '../component/SpecialOffer';
 import StoreBenefits from '../component/StoreBenefits';
@@ -15,6 +16,7 @@ const HomePage = () => {
 			<Brand />
 			<Featured />
 			<Newarrival />
+			<Frame />
 		</>
 	);
 };

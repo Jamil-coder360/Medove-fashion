@@ -1,6 +1,12 @@
-const Button = ({children}) => {
+const Button = ({children,variant = "black" }) => {
+    const styles =
+    variant === "white"
+      ? "bg-white text-black"
+      : "bg-black text-white";
+
   return (
-    <button className="text-white py-[14.5px] px-[34px] bg-black-222 uppercase cursor-pointer inline-block">  
+    <button className={`${styles} py-[14.5px] px-[34px] uppercase cursor-pointer inline-block`}
+>  
     {children}
     </button>
   )

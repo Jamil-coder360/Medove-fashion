@@ -4,7 +4,7 @@ import Image_1 from "../assets/exclusive-1.png"
 const Newarrival = () => {
   return (
     <section>
-      <div className="container py-25">
+      <div className="container py-20">
         <div className='grid grid-cols-2 items-center justify-center gap-17.5'>
 
         <div>
