@@ -1,6 +1,6 @@
 import React from 'react'
 import image1 from "../assets/discount-1.jpg";
-import image2 from "../assets/discount-2.jpg";
+import image2 from "../assets/special.png";
 import SpecialOfferCard from './SpecialOfferCard';
 const SpecialOffer = () => {
   return (
@@ -13,7 +13,7 @@ const SpecialOffer = () => {
               button={"Shop Now"}
             />
             <SpecialOfferCard 
-              img={image1}
+              img={image2}
               text={"Make a Statement This Season"}
               button={"Shop Now"}
             />

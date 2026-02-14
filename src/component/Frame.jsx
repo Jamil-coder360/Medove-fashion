@@ -1,7 +1,11 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
+
 import SpecialOfferCard from "./SpecialOfferCard";
-import Image_1 from "../assets/exclusive-4.png";
-import img from "../assets/exclusive-3.png";
+import Image_1 from "../assets/kids.png";
+import Image_2 from "../assets/cool.png";
+
+import img from "../assets/rust.png";
 import Button from "./Button";
 const Frame = () => {
   const Images = () => ({
@@ -38,7 +42,9 @@ const Frame = () => {
                 <p className=" text-[18px] font-normal leading-[1.5] text-black-222 mb-7.5 ">
                   Casual, cool, and always in style.
                 </p>
-                <Button variant="white">SHOP NOW</Button>
+                <Button variant="white">
+
+                  SHOP NOW <FaArrowRight className="inline-block ml-2" /> </Button>
               </div>
             </div>
             <div className="grid grid-cols-1 gap-10">
@@ -46,13 +52,17 @@ const Frame = () => {
                 variant="white"
                 img={Image_1}
                 text={"$179.000"}
-                button={"Shop now"}
+                button={<>
+                  Shop now <FaArrowRight className="inline-block ml-2" />
+                  </>}
               />
               <SpecialOfferCard
                 variant="white"
-                img={Image_1}
+                img={Image_2}
                 text={"$179.000"}
-                button={"Shop now"}
+                button={<>
+                Shop now <FaArrowRight className="inline-block ml-2"/>
+                </>}
               />
             </div>
           </div>

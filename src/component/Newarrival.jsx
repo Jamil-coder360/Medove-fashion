@@ -1,6 +1,10 @@
 import React from 'react'
 import Button from "./Button"
-import Image_1 from "../assets/exclusive-1.png"
+import Image_1 from "../assets/new.jpg"
+import bag from "../assets/bag.png";
+import hell from "../assets/hell.png";
+import glass from "../assets/glass.png";
+import belt from "../assets/belt.png";
 const Newarrival = () => {
   return (
     <section>
@@ -20,22 +24,22 @@ const Newarrival = () => {
         </div>
         <div className='grid grid-cols-2 gap-8'>
          <SmallCards 
-         Image={Image_1}
+         Image={hell}
          price={"$249.000"}
          title="Golden Strappy Heels"
          />
          <SmallCards 
-         Image={Image_1}
+         Image={bag}
          price={"$179.000"}
          title="Floral Embossed Cream Tote "
          />
          <SmallCards 
-         Image={Image_1}
+         Image={belt}
          price={"$79.000"}
          title="Slim Matte Black Belt"
          />
          <SmallCards 
-         Image={Image_1}
+         Image={glass}
          price={"$80.000"}
          title="Bold Frame Sunglasses"
          />
