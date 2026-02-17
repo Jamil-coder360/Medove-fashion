@@ -1,10 +1,17 @@
 import React from 'react'
-import Button from './Button';
-import Image from "../assets/exclusive-1.png";
+
+import Button from "./Button"
+import Image_1 from "../assets/new.jpg"
+import bag from "../assets/bag.png";
+import hell from "../assets/hell.png";
+import glass from "../assets/glass.png";
+import belt from "../assets/belt.png";
 const Newarrival = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container py-20">
+        <div className='grid grid-cols-2 items-center justify-center gap-17.5'>
+
         <div>
             <div className='w-[587px] mb-12'>
                 <h3 className=' text-[40px] font-medium leading-10.5 text-black-222 mb-4 '>New Arrival Collection</h3>
@@ -13,13 +20,52 @@ const Newarrival = () => {
                 
             </div>
             <div>
-                <img src={Image} alt="" className=' h-[590px] w-[587px] ' />
+
+                <img src={Image_1} alt="" className=' h-[590px] w-[587px] ' />
             </div>
         </div>
-        <div></div>
+        <div className='grid grid-cols-2 gap-8'>
+         <SmallCards 
+         Image={hell}
+         price={"$249.000"}
+         title="Golden Strappy Heels"
+         />
+         <SmallCards 
+         Image={bag}
+         price={"$179.000"}
+         title="Floral Embossed Cream Tote "
+         />
+         <SmallCards 
+         Image={belt}
+         price={"$79.000"}
+         title="Slim Matte Black Belt"
+         />
+         <SmallCards 
+         Image={glass}
+         price={"$80.000"}
+         title="Bold Frame Sunglasses"
+         />
+        </div>
+        </div>
       </div>
     </section>
   )
 }
+ const SmallCards = ({Image,price,title}) =>{
+    return(
+      <div className='flex flex-col items-center justify-between'>
+        <div className='w-[296px] h-[321px]'>
+          <img src={Image} alt="" className='w-full h-full' />
+        </div>
+        <div className='font-jost font-medium text-[16px] leading-[1.4] pt-4'>
 
+        <h4 >{title}</h4>
+        </div>
+        <div className='font-jost font-medium text-[16px] leading-[1.4] pt-2.5'>
+
+        <p >{price}</p>
+        </div>
+      </div>
+    )
+ }
 export default Newarrival
