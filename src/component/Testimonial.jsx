@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import left from "../assets/left.png";
 import right from "../assets/right.png";
+import PortfolioCard from "./portfolio";
 
 const Testimonial = () => {
   return (
@@ -26,9 +27,12 @@ const Testimonial = () => {
               </Button>
             </div>
           </div>
-          <div>
-            
-          </div>
+       	<div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6">
+					<PortfolioCard />
+					<PortfolioCard />
+					<PortfolioCard />
+					<PortfolioCard />
+				</div>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import Header from './Header'
+import Footer from './Footer'
 import { Outlet } from 'react-router'
 
 const Mainlayout = () => {
@@ -6,7 +7,7 @@ const Mainlayout = () => {
     <>
       <Header />
       <Outlet />
-      <footer>Footer</footer>
+      <Footer />
     </>
   )
 }
