@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 import left from "../assets/left.png";
 import right from "../assets/right.png";
-import PortfolioCard from "./portfolio";
+import PortfolioCard from "./Portfolio";
 
 const Testimonial = () => {
   return (
