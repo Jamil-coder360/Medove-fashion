@@ -8,7 +8,7 @@ const StoreBenefits = () => {
   return (
     <section className='py-12'>
         <div className="container">
-            <div className='grid grid-cols-4 gap-8'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 gap-8'>
                 <StoreBenefitsCard 
                     img={Image_1}
                     heading={"Free Shipping"}

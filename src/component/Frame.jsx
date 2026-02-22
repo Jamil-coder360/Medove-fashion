@@ -22,7 +22,7 @@ const Frame = () => {
             <p className="font-jost font-normal text-[18px] leading-[1.5] pb-2">
               Today Deal
             </p>
-            <h1 className="font jost font-medium text-[40px] leading-[1.4] pb-4">
+            <h1 className="font jost font-medium text-[20px] lg:text-[40px] leading-[1.4] pb-4">
               Deal of the day
             </h1>
             <p className=" font-jost font-normal text-[18px] leading-[1.5] pb-11.25">
@@ -30,7 +30,7 @@ const Frame = () => {
               picks before they’re gone!
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-9">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
             <div style={Images()}>
               <div className="mt-12.5 ml-12.5">
                 <p className="text-[18px] text-black-222 font-medium leading-[1.5] font-jost mb-1.25">

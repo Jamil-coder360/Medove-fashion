@@ -15,7 +15,7 @@ const HomePage = () => {
 	return (
 		<>
 			<Banner />
-			<SpecialOffer />
+			 <SpecialOffer />
 			<StoreBenefits />
 			<AboutUs />
 			<Brand />
@@ -26,7 +26,7 @@ const HomePage = () => {
 			<Action />
 			<Blog />
 			<Testimonial />
-			<SocialMedia />	
+			<SocialMedia />	 
 		</>
 	);
 };

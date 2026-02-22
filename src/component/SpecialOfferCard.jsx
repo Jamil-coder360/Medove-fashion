@@ -10,7 +10,7 @@ const bgImage = {
 }
 
   return (
-    <div style={bgImage} className='pt-8.5 pl-10 pb-26.5'>
+    <div style={bgImage} className='pt-4 lg:pt-8.5 pl-10 pb-12 lg:pb-26.5'>
         <div className='max-w-[280px] flex flex-col justify-center items-start'>
 
         <p className='text-[16px] text-gray-75 font-medium leading-[42px] font-jost'>SALE UP TO 25%</p>

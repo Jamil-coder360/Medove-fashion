@@ -6,7 +6,7 @@ const SpecialOffer = () => {
   return (
     <section className='pt-12'>
         <div className="container">
-         <div className='grid grid-cols-2 gap-8'>
+         <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
             <SpecialOfferCard 
               img={image1}
               text={"It’s in the Bag: Limited Deals"}

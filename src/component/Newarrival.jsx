@@ -10,10 +10,10 @@ const Newarrival = () => {
   return (
     <section>
       <div className="container py-20">
-        <div className='grid grid-cols-2 items-center justify-center gap-17.5'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-17.5'>
 
         <div>
-            <div className='w-[587px] mb-12'>
+            <div className='w-full lg:w-[587px] mb-12'>
                 <h3 className=' text-[40px] font-medium leading-10.5 text-black-222 mb-4 '>New Arrival Collection</h3>
                 <p className=' text-[18px] font-normal leading-6.75 text-black-222 mb-7.5 '>Step into the season with fresh essentials. From statement heels to everyday accessories — curated to elevate your style in every detail.</p>
                 <Button>SHOP NOW</Button>
@@ -24,7 +24,7 @@ const Newarrival = () => {
                 <img src={Image_1} alt="" className=' h-[590px] w-[587px] ' />
             </div>
         </div>
-        <div className='grid grid-cols-2 gap-8'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
          <SmallCards 
          Image={hell}
          price={"$249.000"}
@@ -54,7 +54,7 @@ const Newarrival = () => {
  const SmallCards = ({Image,price,title}) =>{
     return(
       <div className='flex flex-col items-center justify-between'>
-        <div className='w-[296px] h-[321px]'>
+        <div className='w-full lg:w-[296px] h-[321px]'>
           <img src={Image} alt="" className='w-full h-full' />
         </div>
         <div className='font-jost font-medium text-[16px] leading-[1.4] pt-4'>
