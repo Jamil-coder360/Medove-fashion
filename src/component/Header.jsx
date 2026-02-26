@@ -70,13 +70,13 @@ const Header = () => {
             {isOpen && (
               <>
                 <div
-                  className={`fixed top-0 left-0 h-full w-[220px] bg-white z-50 transform transition-transform duration-300 
+                  className={`fixed top-0 left-0 h-full w-[220px] bg-white z-50 transform transition-transform duration-300 lg:hidden
         ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
                 >
-                  <ul className="flex pt-10 gap-5 flex-col  pl-4 "  onClick={() => setIsOpen(false)}>
+                  <ul className="flex pt-10 gap-5 flex-col pl-4 ">
                     {menuItem.map((item) => {
                       return (
-                        <li key={item.id}>
+                        <li key={item.id} onClick={() => setIsOpen(false)}>
                           <Link
                             className="text-[14px] font-medium font-jost text-black-d0a"
                             to={item.link}
@@ -90,7 +90,7 @@ const Header = () => {
                 </div>
                 <div
                   onClick={() => setIsOpen(false)}
-                  className="fixed inset-0 bg-black/40 z-40"
+                  className="fixed inset-0 bg-black/40 z-40 lg:hidden"
                 />
               </>
             )}
