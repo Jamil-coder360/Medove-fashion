@@ -1,21 +1,24 @@
 import React from "react";
 import Slider from "react-slick";
+import "../index.css";
+import "../style.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+// import "swiper/css/navigation";
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation, Mousewheel } from "swiper/modules";
+
 import BlogCard from "./BlogCard";
 import Image_1 from "../assets/brand-1.png";
 import Image_2 from "../assets/brand-2.png";
 import Image_3 from "../assets/brand-3.png";
 const Blog = () => {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-       customPaging: i => (
-      <div className="dot">
-      </div>
-    ),
-  };
+
 
   return (
     <section>
@@ -29,51 +32,92 @@ const Blog = () => {
         </p>
         <div></div>
         <div className="">
-          <Slider {...settings}>
-            <div>
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={1}
+            // centeredSlides={true}
+            mousewheel={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            // navigation={true}
+            modules={[Autoplay, Pagination, Navigation, Mousewheel]}
+            className="mySwiper"
+              breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1280: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
+          >
+            <SwiperSlide>
+              {" "}
               <BlogCard
                 text="Look stylish with minimal effort using versatile basics perfect for everyday wear."
                 title="Effortless Style Made Easy"
                 img={Image_1}
               />
-            </div>
-            <div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
               <BlogCard
                 text="From jackets to shirts, oversized pieces bring comfort and a modern edge to your wardrobe.."
                 title="Oversized Denim Looks Are In"
                 img={Image_2}
               />
-            </div>
-            <div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
               <BlogCard
                 text="Small in size, big on impact — mini bags are the ultimate accessory to complete your look."
                 title="The Power of Mini Bags"
                 img={Image_3}
               />
-            </div>
-            <div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
               <BlogCard
                 text="Look stylish with minimal effort using versatile basics perfect for everyday wear."
                 title="Effortless Style Made Easy"
                 img={Image_1}
               />
-            </div>
-            <div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
               <BlogCard
-                text="Look stylish with minimal effort using versatile basics perfect for everyday wear."
-                title="Effortless Style Made Easy"
-                img={Image_1}
+                text="From jackets to shirts, oversized pieces bring comfort and a modern edge to your wardrobe.."
+                title="Oversized Denim Looks Are In"
+                img={Image_2}
               />
-            </div>
-            <div>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
               <BlogCard
-                text="Look stylish with minimal effort using versatile basics perfect for everyday wear."
-                title="Effortless Style Made Easy"
-                img={Image_1}
+                text="From jackets to shirts, oversized pieces bring comfort and a modern edge to your wardrobe.."
+                title="Oversized Denim Looks Are In"
+                img={Image_2}
               />
-            </div>
-          </Slider>
+            </SwiperSlide>
+          </Swiper>
+        
         </div>
+
       </div>
     </section>
   );

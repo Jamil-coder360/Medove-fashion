@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router";
 import searchIcon from "../assets/icons/search.png";
 import userIcon from "../assets/icons/user.png";
@@ -35,6 +35,7 @@ const menuItem = [
 ];
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="my-7.5">
       <nav>
@@ -43,7 +44,10 @@ const Header = () => {
             <div className="image">
               <img src="/logo.png" alt="logo" />
             </div>
-            <div>
+
+            {/* Dekstop veiw */}
+
+            <div className="hidden lg:block">
               <ul className="flex items-center justify-center gap-11">
                 {menuItem.map((item) => {
                   return (
@@ -59,6 +63,38 @@ const Header = () => {
                 })}
               </ul>
             </div>
+            {/* mobile veiw */}
+
+            {/* overlay for menu-ber close */}
+
+            {isOpen && (
+              <>
+                <div
+                  className={`fixed top-0 left-0 h-full w-[220px] bg-white z-50 transform transition-transform duration-300 
+        ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+                >
+                  <ul className="flex pt-10 gap-5 flex-col  pl-4 "  onClick={() => setIsOpen(false)}>
+                    {menuItem.map((item) => {
+                      return (
+                        <li key={item.id}>
+                          <Link
+                            className="text-[14px] font-medium font-jost text-black-d0a"
+                            to={item.link}
+                          >
+                            {item.text}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+                <div
+                  onClick={() => setIsOpen(false)}
+                  className="fixed inset-0 bg-black/40 z-40"
+                />
+              </>
+            )}
+
             <div className="flex justify-end gap-4">
               <IconBox icon={searchIcon} />
               <IconBox icon={userIcon} />
@@ -69,11 +105,14 @@ const Header = () => {
         </div>
       </nav>
       <div className="container mt-3">
-        <div className="grid grid-cols-[40px_170px_1fr] gap-2.5 items-center justify-between">
-          <button className="bg-[F3F3F3] p-2 rounded-md">
+        <div className="grid grid-cols-[auto_1fr] lg:grid-cols-[40px_170px_1fr] gap-2.5 items-center justify-between">
+          <button
+            className="bg-[F3F3F3] p-2 rounded-md"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             <img src={menuIcon} alt="menu" />
           </button>
-          <div>
+          <div className="hidden lg:block">
             <select name="" id="" className="uppercase ">
               <option value="All DEPARTMENTS">All DEPARTMENTS</option>
               <option value="Shirt">Shirt </option>
@@ -81,14 +120,14 @@ const Header = () => {
               <option value="Polo">Polo</option>
             </select>
           </div>
-          <div>
+          <div className="">
             <form
               action=""
-              className="grid grid-cols-[1fr_120px_78px] items-center justify-between gap-2.5 "
+              className="grid grid-cols-[auto_1fr_1fr] lg:grid-cols-[1fr_120px_78px] items-center justify-between gap-2.5 "
             >
               <input className="w-full" type="text" placeholder="Search..." />
 
-              <select name="" id="" className="uppercase ">
+              <select name="" id="" className="uppercase  ">
                 <option value="All Category">All Category</option>
                 <option value="Shirt">Mid range </option>
                 <option value="Pant">high range</option>

@@ -1,4 +1,4 @@
-import portfolio_1 from "../assets/featur-1.png";
+import portfolio_1 from "../assets/user.svg";
 
 const PortfolioCard = () => {
 	return (

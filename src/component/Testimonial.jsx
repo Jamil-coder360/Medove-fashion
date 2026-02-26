@@ -9,7 +9,7 @@ const Testimonial = () => {
     <section>
       <div className="container">
         <div>
-          <div className="flex  justify-between">
+          <div className="flex  justify-between pb-12">
             <div className="flex flex-col items-start justify-between gap-5">
               <p className="font-regular text-[18px] leading-[1.5] text-[#757575]">
                 Testimonial
@@ -18,7 +18,7 @@ const Testimonial = () => {
                 What our customers say
               </h1>
             </div>
-            <div className="flex gap-3.5">
+            <div className="flex gap-3.5 hidden lg:flex">
               <Button>
                 <img src={left} alt="" />
               </Button>

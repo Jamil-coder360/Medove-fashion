@@ -1,51 +1,97 @@
 import React from "react";
-import Slider from "react-slick";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation, Mousewheel } from "swiper/modules";
 
 import Image_1 from "../assets/brand-1.png";
 import Image_2 from "../assets/brand-2.png";
 import Image_3 from "../assets/brand-3.png";
 const Brand = () => {
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-   autoplay: true,
-//   speed: 1000,
-  autoplaySpeed: 2000,
-  pauseOnHover: true,
-  };
+
 
   return (
     <section>
       <div className="container py-25 ">
-        <Slider {...settings}>
-          <div>
+        <> 
+        <Swiper
+          spaceBetween={30}
+               slidesPerView={2}
+            mousewheel={true}
+          // centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+         pagination={false}
+          // navigation={true}
+          modules={[Autoplay, Pagination, Navigation, Mousewheel]}
+          className={"mySwiper relative"}
+          breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1280: {
+                slidesPerView: 6,
+                spaceBetween: 60,
+              },
+           }}
+        >
+          <SwiperSlide>
+            {" "}
             <Images image={Image_1} />
-          </div>
-          <div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
             <Images image={Image_2} />
-          </div>
-          <div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
             <Images image={Image_3} />
-          </div>
-          <div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
             <Images image={Image_2} />
-          </div>
-          <div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
             <Images image={Image_1} />
-          </div>
-          <div>
-            <Images image={Image_2} />
-          </div>
-          <div>
-            <Images image={Image_1} />
-          </div>
-          <div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
             <Images image={Image_3} />
-          </div>
-        </Slider>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <Images image={Image_1} />
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <Images image={Image_2} />
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <Images image={Image_3} />
+          </SwiperSlide>
+        
+        </Swiper>
+        </>
       </div>
     </section>
   );

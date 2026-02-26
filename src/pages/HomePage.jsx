@@ -1,3 +1,4 @@
+// import Slide from '../component/slide';
 import AboutUs from '../component/AboutUs';
 import Action from '../component/Action';
 import Banner from '../component/Banner';	
@@ -5,6 +6,7 @@ import Blog from '../component/Blog';
 import Brand from '../component/Brand';
 import Featured from '../component/Featured';
 import Frame from '../component/Frame';
+import MediaSlide from '../component/MediaSlide';
 import Member from '../component/Member';
 import Newarrival from '../component/Newarrival';
 import SocialMedia from '../component/SocialMedia';
@@ -27,6 +29,8 @@ const HomePage = () => {
 			<Blog />
 			<Testimonial />
 			<SocialMedia />	 
+			<MediaSlide />
+			{/* <Slide /> */}
 		</>
 	);
 };

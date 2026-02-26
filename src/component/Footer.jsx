@@ -4,9 +4,9 @@ import { Link } from "react-router";
 
 const Footer = () => {
 	return (
-		<footer className="pt-17">
+		<footer className="pt-5 lg:pt-17 ">
 			<Container>
-				<div className="grid grid-cols-[330px_1fr] gap-16 pb-12">
+				<div className="grid grid-cols-1 lg:grid-cols-[330px_1fr] gap-16 pb-12">
 					<div>
 						<Link className="font-jost font-bold text-[32px]" to={"/"}>
 							Modevo.
@@ -114,7 +114,7 @@ const Footer = () => {
 						</div>
 					</div>
 
-					<div className="flex justify-between gap-10">
+					<div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-10">
 						<FooterItem
 							title={"Shop Highlights"}
 							menuItems={[
@@ -166,7 +166,7 @@ const Footer = () => {
 const FooterItem = ({ title, menuItems = [], contactInfo = false }) => {
 	return (
 		<div>
-			<h3 className="text-[18px] text-black-222 pb-5 font-medium font-jost">
+			<h3 className="text-[18px] text-black-222 pb-2 lg:pb-5 font-medium font-jost">
 				{title}
 			</h3>
 			<ul className="space-y-1.5">
