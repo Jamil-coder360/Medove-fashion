@@ -47,7 +47,7 @@ const Header = () => {
 
             {/* Dekstop veiw */}
 
-            <div className="hidden lg:block">
+            <div className="hidden md:block lg:block">
               <ul className="flex items-center justify-center gap-11">
                 {menuItem.map((item) => {
                   return (
@@ -70,7 +70,7 @@ const Header = () => {
             {isOpen && (
               <>
                 <div
-                  className={`fixed top-0 left-0 h-full w-[220px] bg-white z-50 transform transition-transform duration-300 lg:hidden
+                  className={`fixed top-0 left-0 h-full w-[220px] bg-white z-50 transform transition-transform duration-300 md:hidden lg:hidden
         ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
                 >
                   <ul className="flex pt-10 gap-5 flex-col pl-4 ">
@@ -90,7 +90,7 @@ const Header = () => {
                 </div>
                 <div
                   onClick={() => setIsOpen(false)}
-                  className="fixed inset-0 bg-black/40 z-40 lg:hidden"
+                  className="fixed inset-0 bg-black/40 z-40 lg:hidden md:hidden"
                 />
               </>
             )}
