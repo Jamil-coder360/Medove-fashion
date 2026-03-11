@@ -42,7 +42,9 @@ const Header = () => {
         <div className="container ">
           <div className="flex justify-between items-center">
             <div className="image">
+              <Link to="/">
               <img src="/logo.png" alt="logo" />
+              </Link>
             </div>
 
             {/* Dekstop veiw */}

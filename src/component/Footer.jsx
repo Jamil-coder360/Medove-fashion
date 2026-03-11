@@ -114,7 +114,7 @@ const Footer = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-10">
+					<div className="flex flex-col lg:flex-row  justify-between gap-5 lg:gap-10">
 						<FooterItem
 							title={"Shop Highlights"}
 							menuItems={[
