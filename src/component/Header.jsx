@@ -5,6 +5,7 @@ import userIcon from "../assets/icons/user.png";
 import favoriteIcon from "../assets/icons/carbon_favorite.png";
 import cartIcon from "../assets/icons/cart.png";
 import menuIcon from "../assets/icons/ri_menu-2-fill.png";
+// import logo from ".."
 import Button from "./Button";
 const menuItem = [
   {
