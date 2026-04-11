@@ -1,9 +1,9 @@
 import React from 'react'
 
 import Button from "./Button"
-import Image_1 from "../assets/new.jpg"
+import Image_1 from "../assets/collection.png"
 import bag from "../assets/bag.png";
-import hell from "../assets/hell.png";
+import hell from "../assets/shoe.png";
 import glass from "../assets/glass.png";
 import belt from "../assets/belt.png";
 const Newarrival = () => {

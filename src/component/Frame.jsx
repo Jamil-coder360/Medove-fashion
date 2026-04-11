@@ -5,7 +5,7 @@ import SpecialOfferCard from "./SpecialOfferCard";
 import Image_1 from "../assets/kids.png";
 import Image_2 from "../assets/cool.png";
 
-import img from "../assets/rust.png";
+import img from "../assets/rust.jpg";
 import Button from "./Button";
 const Frame = () => {
   const Images = () => ({

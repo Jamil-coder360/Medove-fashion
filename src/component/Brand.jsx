@@ -11,9 +11,12 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation, Mousewheel } from "swiper/modules";
 
-import Image_1 from "../assets/brand-1.png";
-import Image_2 from "../assets/brand-2.png";
-import Image_3 from "../assets/brand-3.png";
+import Image_1 from "../assets/brand.png";
+import Image_2 from "../assets/brand6.png";
+import Image_3 from "../assets/brand2.png";
+import Image_4 from "../assets/brand3.png";
+import Image_5 from "../assets/brand4.png";
+import Image_6 from "../assets/brand5.png";
 const Brand = () => {
 
 
@@ -25,6 +28,7 @@ const Brand = () => {
           spaceBetween={30}
                slidesPerView={2}
             mousewheel={true}
+            loop={true}
           // centeredSlides={true}
           autoplay={{
             delay: 2500,
@@ -67,15 +71,15 @@ const Brand = () => {
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <Images image={Image_2} />
+            <Images image={Image_4} />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <Images image={Image_1} />
+            <Images image={Image_5} />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <Images image={Image_3} />
+            <Images image={Image_6} />
           </SwiperSlide>
           <SwiperSlide>
             {" "}

@@ -16,6 +16,10 @@ import Image_1 from "../assets/exclusive-1.png";
 import Image_2 from "../assets/exclusive-2.png";
 import Image_3 from "../assets/exclusive-3.png";
 import Image_4 from "../assets/exclusive-4.png";
+import Image_5 from "../assets/exclusive-5.png";
+import Image_6 from "../assets/exclusive-6.png";
+import Image_7 from "../assets/exclusive-7.png";
+// import Image_4 from "../assets/exclusive-4.png";
 
 import left from "../assets/left.png";
 import right from "../assets/right.png";
@@ -34,8 +38,9 @@ const Featured = () => {
           <Swiper
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             slidesPerView={1}
-            mousewheel={true}
+            mousewheel={false}
             spaceBetween={10}
+            loop={true}
             pagination={{
               clickable: true,
             }}
@@ -100,7 +105,7 @@ const Featured = () => {
             <SwiperSlide>
               {" "}
               <FeaturedCard
-                Image={Image_1}
+                Image={Image_5}
                 title="Relaxed Stitch Shirt"
                 price="ADD TO CART"
                 colors={["#55483B", "#403D72", "#E5C2C3", "#E6DDD6"]}
@@ -110,7 +115,7 @@ const Featured = () => {
             <SwiperSlide>
               {" "}
               <FeaturedCard
-                Image={Image_1}
+                Image={Image_6}
                 title="Relaxed Stitch Shirt"
                 price="ADD TO CART"
                 colors={["#55483B", "#403D72", "#E5C2C3", "#E6DDD6"]}
@@ -119,7 +124,7 @@ const Featured = () => {
             <SwiperSlide>
               {" "}
               <FeaturedCard
-                Image={Image_1}
+                Image={Image_7}
                 title="Relaxed Stitch Shirt"
                 price="ADD TO CART"
                 colors={["#55483B", "#403D72", "#E5C2C3", "#E6DDD6"]}
@@ -142,7 +147,7 @@ const Featured = () => {
           <div className="hidden md:block lg:block ">
             <span
               onClick={() => swiperRef.current.slidePrev()}
-              className="absolute left-[-2.5%] top-1/2 transform -translate-y-1/2 z-10"
+              className="absolute left-[-2.5%] top-1/2 transform -translate-y-20 z-10"
             >
               <Button>
                 <img src={left} alt="Left" />
@@ -151,7 +156,7 @@ const Featured = () => {
 
             <span
               onClick={() => swiperRef.current.slideNext()}
-              className="absolute right-[-2.5%] top-1/2 transform -translate-y-1/2 z-10"
+              className="absolute right-[-2.5%] top-1/2 transform -translate-y-20 z-10"
             >
               <Button>
                 <img src={right} alt="Right" />

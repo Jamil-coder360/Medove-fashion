@@ -1,6 +1,6 @@
 import React from 'react'
-import image1 from "../assets/discount-1.jpg";
-import image2 from "../assets/special.png";
+import image1 from "../assets/kids.jpg";
+import image2 from "../assets/denim.png";
 import SpecialOfferCard from './SpecialOfferCard';
 const SpecialOffer = () => {
   return (

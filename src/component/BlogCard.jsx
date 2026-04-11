@@ -5,7 +5,7 @@ const BlogCard = ({ title,text,img}) => {
   const date = new Date();
 
   return (
-    <div className="bg-[#F3F3F3] max-w-[405px]">
+    <div className="bg-[#F3F3F3] max-w-[405px] overflow-hidden">
       <div className="w-[405px] h-[354px] relative">
         <img className="w-full h-full object-cover" src={img} alt="image" />
 

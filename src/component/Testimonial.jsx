@@ -9,7 +9,7 @@ const Testimonial = () => {
     <section>
       <div className="container">
         <div>
-          <div className="flex  justify-between pb-12">
+          <div className="flex items-end justify-between pb-12">
             <div className="flex flex-col items-start justify-between gap-5">
               <p className="font-regular text-[18px] leading-[1.5] text-[#757575]">
                 Testimonial

@@ -36,7 +36,8 @@ const Blog = () => {
             spaceBetween={30}
             slidesPerView={1}
             // centeredSlides={true}
-            mousewheel={true}
+            loop={true}
+            mousewheel={false}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,

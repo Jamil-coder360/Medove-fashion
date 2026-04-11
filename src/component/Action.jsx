@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/special.png";
+import img from "../assets/shoping.png";
 import Button from "./Button";
 const Action = () => {
   const bgImage = {
