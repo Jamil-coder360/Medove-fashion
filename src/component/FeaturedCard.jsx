@@ -11,7 +11,7 @@ const FeaturedCard = ({ Image,title, price, colors,showUnderline }) => {
         <h4>{title}</h4>
       </div>
 
-      <div>
+      <div className="flex gap-1">
         {colors?.map((color, index) => {
           console.log(color);
           return (

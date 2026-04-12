@@ -27,7 +27,7 @@ const Brand = () => {
         <Swiper
           spaceBetween={30}
                slidesPerView={2}
-            mousewheel={true}
+            // mousewheel={true}
             loop={true}
           // centeredSlides={true}
           autoplay={{

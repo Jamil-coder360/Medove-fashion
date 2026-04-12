@@ -31,7 +31,7 @@ const Frame = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
-            <div style={Images()}>
+            <div style={Images()} className="pb-15">
               <div className="mt-12.5 ml-12.5">
                 <p className="text-[18px] text-black-222 font-medium leading-[1.5] font-jost mb-1.25">
                   Flat 20% Discount

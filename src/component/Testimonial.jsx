@@ -42,7 +42,7 @@ const Testimonial = () => {
           {/* <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6"> */}
           <Swiper
             onSwiper={(swiper) => (swiperRef.current = swiper)}
-            slidesPerView={2}
+            slidesPerView={1}
             // mousewheel={false}
             spaceBetween={10}
             loop={true}

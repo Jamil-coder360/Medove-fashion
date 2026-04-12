@@ -13,7 +13,7 @@ const AboutUs = () => {
     <section className="h-[640px] overflow-hidden">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 ">
-          <div style={Image}  className="lg:pt-[155px] lg:pb-[132px]  lg:pr-[105px] lg:pl-[116px]  bg-red-300 ">
+          <div style={Image}  className="lg:pt-[155px] lg:pb-[132px]  lg:pr-[105px] lg:pl-[116px]  bg-red-300 h-full">
             <p className="pt-2">About us</p>
             <h1 className="text-black text-[22px] lg:text-[40px] font-medium font-jost leading-[55px] tracking-[0.46%] pt-2  ">
               Designed to Empower, Crafted to Last
@@ -27,7 +27,7 @@ const AboutUs = () => {
 
             <Button className="bg-transparent !text-black border">EXPLORE MORE</Button>
           </div>
-          <div className="pt-4 lg:pt-0 h-[640px] w-full">
+          <div className="pt-4 lg:pt-0  w-full">
             <img src={img} alt="Image" className="h-full w-full" />
           </div>
         </div>
